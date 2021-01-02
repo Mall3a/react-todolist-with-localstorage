@@ -137,3 +137,23 @@ select {
   transform: scale(1.5);
 }
 */
+.container{
+  display: grid;
+  grid-template-areas: "input-button select"
+                       "span span "
+}
+
+.todo-input-button{
+  grid-area: input-button;
+  align-self: center;
+}
+
+.select{
+  grid-area: select;
+}
+
+.alert-text {
+  grid-area: span;
+  color: red;
+  margin-bottom: 10px;
+}
